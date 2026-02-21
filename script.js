@@ -80,7 +80,7 @@ const formatMovementDate = function (date, locale) {
 };
 
 const formatCur = function (value, locale, currency) {
-  return new Intl.NumberFormat(locale, {
+  return new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency: currency,
   }).format(value);
